@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ### 4. Generate Test Data 📈
 
-#### 🎞️ This Command will take a while & populate the Database with 1M random movies.
+#### 🎞️ This Command will take a while & populate the Database with 1M random movies
 
 - 💡To Save Time, I only tried this API with 600K records, which took a lot of time. So I would suggest to try with just 5000 record & run this command in different terminal windows to generate data in parallel.
 
@@ -89,6 +89,8 @@ http://localhost:8000/api/search/?q=t&facets=year:1983,genre:rise
 ![ElasticSearch Warning](./assets/images/warning.png)
 
 ### 📌The Generated Data is not realistic.. it's just for demo purpose
+
+![Generated Data](./assets/images/api.png)
 
 ## Helpful Links
 
