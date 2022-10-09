@@ -88,7 +88,7 @@ http://localhost:8000/api/search/?q=t&facets=year:1983,genre:rise
 
 ![ElasticSearch Warning](./assets/images/warning.png)
 
-### 📌The Generated Data is not realistic.. it's just for demo purpose
+### 📌The Generated Data is not realistic.. it's just for demo purpose. But as you can see in debug panel on the right side, the SQL count is 0 which means it is not hitting the database. It is directly hitting the ElasticSearch
 
 ![Generated Data](./assets/images/api.png)
 
