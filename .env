@@ -1,0 +1,1 @@
+export DEBUG=0

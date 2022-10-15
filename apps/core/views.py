@@ -47,7 +47,9 @@ class SearchViewElk(APIView, LimitOffsetPagination):
             sqs = self.filter_sqs_by_facets(sqs, facets)
 
         page = self.paginate_queryset(sqs, request, view=self)
-        movie_serializer = self.serializer_class(page, many=True)
+        movie_serializer = self.serializer_class(
+            page, many=True, context={"request": request}
+        )
         facets = self.get_facet_fields(sqs)
         summary = self.prepare_summary(sqs)
         data = {"movies": movie_serializer.data, "facets": facets, "summary": summary}

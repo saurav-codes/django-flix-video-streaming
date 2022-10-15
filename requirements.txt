@@ -17,6 +17,7 @@ executing==1.1.0
 factory-boy==3.2.1
 Faker==14.2.1
 flake8==5.0.4
+gunicorn==20.1.0
 ipdb==0.13.9
 ipython==8.5.0
 jedi==0.18.1
@@ -27,7 +28,6 @@ parso==0.8.3
 pathspec==0.10.1
 pexpect==4.8.0
 pickleshare==0.7.5
-pkg-resources==0.0.0
 platformdirs==2.5.2
 prompt-toolkit==3.0.31
 psycopg2==2.9.4
@@ -47,3 +47,4 @@ traitlets==5.4.0
 typing-extensions==4.1.1
 urllib3==1.26.12
 wcwidth==0.2.5
+whitenoise==6.2.0
