@@ -21,6 +21,7 @@ RUN apt update && apt install -y \
     openjdk-11-jdk \
     openjdk-11-jre
 
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 WORKDIR /usr/src/app
@@ -28,4 +29,3 @@ WORKDIR /usr/src/app
 COPY ./ ./
 
 EXPOSE 8000
-CMD gunicorn src.wsgi:application --bind 0.0.0.0:8000

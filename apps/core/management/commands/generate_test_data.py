@@ -23,7 +23,7 @@ class Command(BaseCommand):
         DirectorFactory.create_batch(30)
         print("created 30 directors ✅")
         no_of_movies = options["no_of_movies"]
-
+        self.batch_size = no_of_movies // 10
         # create movies in batches of given size
         print(f"creating movies in batches of {self.batch_size}")
         for i in range(0, no_of_movies, self.batch_size):
