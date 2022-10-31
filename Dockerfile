@@ -17,9 +17,7 @@ RUN apt update && apt install -y \
     python3-pip \
     python3-dev \
     libpq-dev \
-    apt-transport-https \
-    openjdk-11-jdk \
-    openjdk-11-jre
+    apt-transport-https
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt

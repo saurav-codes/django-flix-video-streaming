@@ -165,13 +165,19 @@ REST_FRAMEWORK = {
 
 
 # Haystack settings
+ELK_HOST = env("ELK_HOST")
+ELK_PORT = env("ELK_PORT")
+ELK_INDEX_NAME = env("ELK_INDEX_NAME")
+ELK_CONNECTION_PROTOCOL = env("ELK_CONNECTION_PROTOCOL")
+
 HAYSTACK_CONNECTIONS = {
     "default": {
         "ENGINE": "haystack.backends.elasticsearch7_backend.Elasticsearch7SearchEngine",
-        "URL": "http://127.0.0.1:9200/",
-        "INDEX_NAME": "django_flix",
+        "URL": f"{ELK_CONNECTION_PROTOCOL}://{ELK_HOST}:{ELK_PORT}/",
+        "INDEX_NAME": ELK_INDEX_NAME,
     },
 }
+
 # auto index to elastic search when new data is created or when data is saved in the database
 HAYSTACK_SIGNAL_PROCESSOR = "haystack.signals.RealtimeSignalProcessor"
 
