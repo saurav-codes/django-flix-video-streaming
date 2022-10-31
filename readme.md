@@ -9,6 +9,8 @@ Default Django Search like using `icontains` or `contains` then it will take a l
 
 ## Setup
 
+### Note: If you have Docker, then you can simply run the app using Docker. Just type `docker-compose up` in the terminal and it will run the app. But if you want to run the app without Docker then follow the steps below
+
 ### 1. Clone the repo
 
 ```bash
