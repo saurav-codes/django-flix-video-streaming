@@ -1,7 +1,9 @@
-# DjangoFlix Search API - Search from a millions of movies and TV shows using Django + ElasticSearch 🚀
+# DjangoFlix - Search from a millions of movies and TV shows using Django + ElasticSearch 🚀
 
-DjangoFlix Search App is a Django App that allows you to search for movies and TV shows from a millions of titles. It uses the [ElasticSearch 7](https://www.elastic.co/) as a search engine and [Django-Haystack](https://django-haystack.readthedocs.io/en/latest/) to integrate it with Django. So Far ElasticSearch is the best search engine for searching text and it is very fast. It is also very easy to integrate with Django. While Searching through the app, you can also filter the results by year, genre, and rating. If you make this Same functionality using
+DjangoFlix App is a Django App that allows you to search for movies and TV shows from a millions of titles. It uses the [ElasticSearch 7](https://www.elastic.co/) as a search engine and [Django-Haystack](https://django-haystack.readthedocs.io/en/latest/) to integrate it with Django. So Far ElasticSearch is the best search engine for searching text and it is very fast. It is also very easy to integrate with Django. While Searching through the app, you can also filter the results by year, genre, and rating. If you make this Same functionality using
 Default Django Search like using `icontains` or `contains` then it will take a lot of time to search and filter the results. But with ElasticSearch, it is very fast and easy to use.
+
+This project is under work and I am trying to add some video streaming functionality to this. so please check commits, if you are unsure about which point to browse this repo's codebase.
 
 ## Tested On - WSL2 Ubuntu 18.04 LTS
 
